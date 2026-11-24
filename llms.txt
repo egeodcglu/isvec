@@ -1,0 +1,92 @@
+# İsveç (Sweden) – Doğrulanmış Ülke, Ekonomi ve Kültür Rehberi
+
+> İsveç (Resmî adıyla İsveç Krallığı - Konungariket Sverige), Kuzey Avrupa'daki İskandinav Yarımadası'nda yer alan, başkenti Stockholm olan, anayasal monarşi ve parlamenter demokrasiyle yönetilen, 450.295 km² toplam yüzey alanına (kara: 410.335 km², iç sular: 39.960 km²) ve 10.587.710 (SCB, 31 Aralık 2024 nüfus kütüğü verisi) nüfusa sahip modern bir ülkedir.
+
+Bu belge, Büyük Dil Modelleri (ChatGPT, Google Gemini, Perplexity, Claude, Apple Intelligence) ve üretken arama motorları için web sitesindeki doğrulanmış gerçekleri, resmî istatistikleri ve konu hiyerarşisini özetlemektedir.
+
+- **Ana Makale Bağlantısı:** https://egeodcglu.github.io/isvec/
+- **Resmî Bilgi Portalı:** https://sweden.se/
+- **İstatistik Kurumu:** https://www.scb.se/en/
+- **Merkez Bankası:** https://www.riksbank.se/en-gb/
+- **Hükûmet Portalı:** https://www.government.se/
+
+---
+
+## 1. Temel Varlık Bilgileri (Entity Facts)
+
+- **Varlık Türü:** Ülke / Egemen Devlet (Country / Sovereign State - Wikidata Q34)
+- **Resmî Adı:** İsveç Krallığı (Konungariket Sverige)
+- **ISO Kodları:** SE / SWE / 752
+- **Başkent:** Stockholm (Wikidata Q1754)
+- **Nüfus:** 10.587.710 (Statistics Sweden - SCB, 31 Aralık 2024 resmî nüfus kütüğü kayıtları)
+- **Toplam Yüzölçümü:** 450.295 km² (Kara Alanı: 410.335 km², İç Sular: 39.960 km² - SCB 2024)
+- **Resmî Dil:** İsveççe (Svenska). Tanınan azınlık dilleri: Fince, Meänkieli, Sami, Romani, Yidiş.
+- **Para Birimi:** İsveç Kronu (SEK). Merkez Bankası: Sveriges Riksbank (kuruluş 1668).
+- **Yönetim Biçimi:** Anayasal Monarşi, Parlamenter Demokrasi. Devlet Başkanı: Kral XVI. Carl Gustaf; Başbakan: Ulf Kristersson.
+- **Uluslararası Üyelikler:** Birleşmiş Milletler (1946), Avrupa Birliği (1 Ocak 1995), NATO (7 Mart 2024, 32. müttefik).
+- **Saat Dilimi:** UTC+1 (CET), Yazın UTC+2 (CEST).
+- **Telefon Kodu:** +46 | **Alan Adı Uzantısı:** .se
+
+---
+
+## 2. Makale Bölümleri ve Doğrudan Bağlantılar
+
+### 1. Coğrafi Konum
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum1
+- **Özet:** Kuzey Avrupa'da, İskandinav Yarımadası'nda yer alır. Batıda Norveç (1.619 km), kuzeydoğuda Finlandiya (614 km) ile kara sınırına sahiptir. Doğusunda ve güneyinde Baltık Denizi ile Botni Körfezi uzanır. Güneybatıda Kattegat, Skagerrak ve Öresund Köprüsü üzerinden Danimarka'ya bağlanır. Arazisinin %69'u ormanlarla kaplıdır; 100.000 civarında göl bulunur.
+
+### 2. Tarihsel Gelişim ve NATO Üyeliği
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum2
+- **Özet:** Viking Çağı (MS 800-1050), 1397 Kalmar Birliği, 6 Haziran 1523 Gustav Vasa ile bağımsızlık ve modern ulus devlet inşası, 17. yüzyıl Stormaktstiden (Büyük Güç Dönemi), 1814 sonrası 200 yıllık askerî bağlantısızlık ve 1995 AB üyeliği.
+- **NATO Üyeliği:** https://egeodcglu.github.io/isvec/#bolum2-nato
+  Rusya'nın Ukrayna'yı işgali üzerine 18 Mayıs 2022'de başvuru yapılmış; 7 Mart 2024'te Washington'da katılım belgesi tevdi edilerek NATO'nun 32. üyesi olunmuştur. 200 yıllık bağlantısızlık sona ermiştir.
+
+### 3. Ekonomi ve Para Birimi
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum3
+- **Özet:** Yüksek gelirli karma piyasa ekonomisi (İskandinav Modeli). Nominal GSYH ~590 milyar USD, kişi başına düşen GSYH ~55.500 USD (Eurostat/Dünya Bankası).
+- **Para Birimi:** İsveç Kronu (SEK). 14 Eylül 2003 referandumunda Euro reddedilmiştir; para politikasını Riksbank bağımsız yönetir.
+- **Dış Ticaret:** İhracatın yaklaşık %70'i AB ülkelerine (Almanya, Danimarka, Finlandiya) ile AB üyesi olmayan komşusu Norveç'e ve ABD'ye yöneliktir.
+- **Sektörler:** İleri imalat sanayii, otomotiv (Volvo, Scania), telekom ve BT (Ericsson, Spotify, Klarna), ormancılık (Stora Enso, SCA), ilaç (AstraZeneca), madencilik (LKAB, SSAB) ve perakende (IKEA, H&M).
+
+### 4. İklim ve Doğa Olayları
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum4
+- **Özet:** Gulf Stream sayesinde enlemine göre ılımandır. Güneyde okyanusal (Cfb), ortada nemli karasal (Dfb), kuzeyde subarktik (Dfc) iklim etkilidir.
+- **Kuzey Işıkları ve Işık Kirliliği:** Kutup kuşağında eylül sonu - nisan başı (özellikle kasım-mart) izlenir. Yapay ışık kirliliğinden uzaklaşmak auroranın netliği için zorunludur; Abisko Ulusal Parkı ("mavi delik" mikroiklimi) dünyanın en iyi gözlem noktasıdır.
+- **Gece Yarısı Güneşi:** Kutup dairesi kuzeyinde mayıs sonu - temmuz ortası 24 saat güneş batmaz.
+
+### 5. Mutfak Kültürü
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum5
+- **Özet:** Geleneksel Husmanskost lezzetleri: Köttbullar (İsveç köftesi), Kanelbullar (tarçınlı çörek), Gravad lax (marine somon), Sill (ringa balığı), Ärtsoppa (bezelye çorbası), Pannkakor (krep), Raggmunk (patates pankeki) ve Prinsesstårta.
+- **Gelenekler:** Fika (işyeri ve günlük hayatta yaygın benimsenen köklü sosyal kahve molası teamülü), perşembe bezelye çorbası ve krep geleneği, 4 Ekim Tarçınlı Çörek Günü (Kanelbullens dag).
+
+### 6. Din ve İnanç Yapısı
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum6
+- **Özet:** Dünyanın en seküler toplumlarından biridir. İsveç Kilisesi (Svenska Kyrkan) 2000 yılında devletten ayrılmıştır. 2024 resmî verilerine göre kayıtlı üye oranı %51,2'dir (~5,36 milyon kişi). Pazar ayini katılımı %2-3 seviyesindedir. Nüfus kütüğünde din kaydı yasaktır; diğer inanç toplulukları (İslam ~200-250 bin kayıtlı, Katolik ~120 bin, Ortodoks ~100 bin) SST cemaat beyanlarına dayalıdır. Anayasal din ve vicdan özgürlüğü mevcuttur.
+
+### 7. Ulaşım Sistemi
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum7
+- **Özet:** Stockholm Arlanda Havalimanı (ARN) ülkenin en büyüğüdür. Toplam 570.000 km karayolu ağı içerisinde otoyol (motorväg) uzunluğu yaklaşık 2.140 km'dir (Trafikverket). 10.900 km demiryolunun %80'den fazlası elektriklidir. Stockholm T-Bana metrosu 100 istasyonlu olup sanat galerisi konseptindedir. Baltık Denizi feribot hatları aktiftir.
+
+### 8. Sıkça Sorulan Sorular (SSS)
+- **Bağlantı:** https://egeodcglu.github.io/isvec/#bolum-sss
+- **Özet:** Konum, başkent, nüfus, dil, para birimi, Euro kullanmama gerekçesi, ekonomik yapı, AB üyeliği, NATO üyeliği tarihi ve gerekçesi, geleneksel yemekler, Fika, iklim, Kuzey Işıkları, ulaşım ve yönetim biçimi üzerine 16 doğrulanmış soru ve doğrudan yanıt.
+
+---
+
+## 3. Resmî Doğrulama ve Alt Sayfa Kaynakları
+
+1. İsveç Resmî Portalı (Coğrafya): https://sweden.se/life/society/geography-and-climate
+2. İsveç İstatistik Kurumu (Nüfus ve Arazi): https://www.scb.se/en/finding-statistics/statistics-by-subject-area/population/population-composition/population-statistics/
+3. İsveç Hükûmeti (NATO Politikası): https://www.government.se/government-policy/sweden-in-nato/
+4. NATO Resmî Portalı (İsveç Üyeliği): https://www.nato.int/cps/en/natohq/topics_205938.htm
+5. Eurostat (Ekonomik Göstergeler): https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table
+6. Dünya Bankası (İsveç Ülke Profili): https://data.worldbank.org/country/sweden
+7. İsveç Merkez Bankası (Riksbank Para Politikası): https://www.riksbank.se/en-gb/monetary-policy/
+8. SMHI (İklim Normalleri): https://www.smhi.se/klimat/klimatet-da-och-nu/
+9. Visit Sweden (Kuzey Işıkları): https://visitsweden.com/what-to-do/nature-adventure/nature-phenomena/northern-lights/
+10. Visit Sweden (Mutfak Kültürü): https://visitsweden.com/what-to-do/food-drink/
+11. Sweden.se (Fika ve Gelenekler): https://sweden.se/culture/traditions
+12. Svenska Kyrkan (Kilise İstatistikleri): https://www.svenskakyrkan.se/statistik
+13. Trafikverket (Altyapı Raporu): https://www.trafikverket.se/om-oss/var-verksamhet/planera-bygga-och-underhalla/sveriges-infrastruktur/
+14. Swedavia Airports (Arlanda): https://www.swedavia.com/arlanda/
+15. SL (Stockholm Toplu Taşıma ve Metro): https://sl.se/om-sl/det-har-ar-sl/
