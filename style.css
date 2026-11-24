@@ -1,7 +1,16 @@
+:root {
+  --color-bg: #004b76;
+  --color-toc-bg: #003d60;
+  --color-table-header: #002d48;
+  --color-yellow: #fecc02;
+  --color-white: #ffffff;
+  --font-stack: Arial, Helvetica, sans-serif;
+}
+
 html {
-  background-color: #ffffff;
-  color: #222222;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-stack);
   scroll-behavior: smooth;
   font-size: 16px;
 }
@@ -9,9 +18,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #222222;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-stack);
   line-height: 1.65;
 }
 
@@ -19,16 +28,18 @@ body {
   box-sizing: border-box;
   transition: none !important;
   animation: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 :focus-visible {
-  outline: 2px solid #000000;
+  outline: 2px solid var(--color-yellow);
   outline-offset: 2px;
 }
 
 header {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--color-bg);
+  color: var(--color-yellow);
   padding: 24px 30px 10px 30px;
   max-width: 1540px;
   margin: 0 auto;
@@ -40,8 +51,8 @@ header {
 
 header img {
   width: 60px;
-  height: auto;
-  border: 1px solid #000000;
+  height: 37px;
+  border: 1px solid var(--color-yellow);
   padding: 2px;
   display: block;
 }
@@ -49,14 +60,14 @@ header img {
 header .site-title {
   font-size: 24px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-yellow);
   line-height: 1.2;
 }
 
 main {
   max-width: 1540px;
   margin: 10px auto 30px auto;
-  background-color: #ffffff;
+  background-color: var(--color-bg);
   display: flex;
   gap: 30px;
   padding: 10px 30px;
@@ -71,17 +82,15 @@ aside.toc {
   top: 20px;
   max-height: calc(100vh - 40px);
   overflow-y: auto;
-  background-color: #ffffff;
+  background-color: var(--color-toc-bg);
   border: none;
-  padding: 0;
-  box-shadow: none;
-  border-radius: 0;
+  padding: 18px 16px;
 }
 
 aside.toc h3 {
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-yellow);
   margin: 0 0 12px 0;
   padding: 0;
   border: none;
@@ -99,7 +108,7 @@ aside.toc li {
 
 aside.toc a {
   display: block;
-  color: #000000;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.45;
@@ -110,7 +119,7 @@ aside.toc a {
 
 aside.toc a:hover,
 aside.toc a:focus {
-  color: #000000;
+  color: var(--color-white);
   text-decoration: none;
   background: transparent;
 }
@@ -118,17 +127,15 @@ aside.toc a:focus {
 article {
   flex: 1;
   min-width: 0;
-  background-color: #ffffff;
+  background-color: var(--color-bg);
   border: none;
   padding: 0;
-  box-shadow: none;
-  border-radius: 0;
 }
 
 article > h1 {
   font-size: 32px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-yellow);
   margin: 0 0 8px 0;
   line-height: 1.2;
   border: none;
@@ -136,7 +143,7 @@ article > h1 {
 
 article > .subtitle {
   font-size: 18px;
-  color: #222222;
+  color: var(--color-white);
   font-weight: normal;
   margin: 0 0 14px 0;
   line-height: 1.5;
@@ -145,14 +152,14 @@ article > .subtitle {
 
 .article-meta {
   font-size: 14px;
-  color: #222222;
+  color: var(--color-white);
   margin-bottom: 20px;
   border: none;
   padding: 0;
 }
 
 .article-meta strong {
-  color: #000000;
+  color: var(--color-white);
 }
 
 article figure.hero {
@@ -168,12 +175,11 @@ article figure.hero img {
   object-fit: cover;
   display: block;
   border: none;
-  border-radius: 0;
 }
 
 figcaption {
   font-size: 14px;
-  color: #222222;
+  color: var(--color-white);
   margin-top: 6px;
   font-style: normal;
   line-height: 1.4;
@@ -186,7 +192,7 @@ article section {
 article section h2 {
   font-size: 22px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-white);
   margin: 32px 0 12px 0;
   padding: 0;
   border: none;
@@ -196,7 +202,7 @@ article section h2 {
 article section h3 {
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-white);
   margin: 22px 0 10px 0;
   padding: 0;
   border: none;
@@ -204,19 +210,19 @@ article section h3 {
 }
 
 article p {
-  font-size: 15.5px;
+  font-size: 16px;
   line-height: 1.65;
-  margin: 12px 0;
-  color: #222222;
+  margin: 14px 0;
+  color: var(--color-white);
 }
 
 article ul,
 article ol {
-  font-size: 15px;
+  font-size: 15.5px;
   line-height: 1.6;
   margin: 12px 0;
   padding-left: 24px;
-  color: #222222;
+  color: var(--color-white);
 }
 
 article li {
@@ -224,7 +230,7 @@ article li {
 }
 
 article strong {
-  color: #000000;
+  color: var(--color-white);
   font-weight: bold;
 }
 
@@ -235,21 +241,21 @@ sup.reference {
 }
 
 sup.reference a {
-  color: #0000ee;
+  color: var(--color-yellow);
   text-decoration: underline;
   font-weight: normal;
 }
 
 sup.reference a:hover,
 sup.reference a:focus {
-  color: #0000ee;
+  color: var(--color-yellow);
   text-decoration: underline;
 }
 
 .table-container {
   overflow-x: auto;
   margin: 20px 0;
-  background: #ffffff;
+  background: transparent;
   border: none;
 }
 
@@ -258,15 +264,15 @@ table.data-table {
   border-collapse: collapse;
   font-size: 14px;
   line-height: 1.5;
-  background-color: #ffffff;
-  color: #222222;
-  border: 1px solid #dddddd;
+  background-color: var(--color-toc-bg);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 table.data-table caption {
   font-size: 15px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-yellow);
   text-align: left;
   margin-bottom: 8px;
   padding: 0;
@@ -276,25 +282,25 @@ table.data-table caption {
 
 table.data-table th,
 table.data-table td {
-  border: 1px solid #dddddd;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 8px 12px;
   text-align: left;
   vertical-align: top;
+  color: var(--color-white);
 }
 
 table.data-table th {
-  background-color: #f5f5f5;
-  color: #000000;
+  background-color: var(--color-table-header);
+  color: var(--color-white);
   font-weight: bold;
-  border-bottom: 1px solid #cccccc;
 }
 
 table.data-table tbody tr {
-  background-color: #ffffff;
+  background-color: var(--color-toc-bg);
 }
 
 table.data-table tbody tr:hover {
-  background-color: #ffffff;
+  background-color: var(--color-toc-bg);
 }
 
 .faq-list {
@@ -306,13 +312,12 @@ table.data-table tbody tr:hover {
   padding: 0;
   border: none;
   background: transparent;
-  border-radius: 0;
 }
 
 .faq-item h3 {
   font-size: 17px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-white);
   margin: 0 0 6px 0;
   border: none;
   padding: 0;
@@ -321,7 +326,7 @@ table.data-table tbody tr:hover {
 .faq-item p {
   font-size: 15.5px;
   line-height: 1.65;
-  color: #222222;
+  color: var(--color-white);
   margin: 0;
 }
 
@@ -335,7 +340,7 @@ table.data-table tbody tr:hover {
   font-size: 14px;
   line-height: 1.6;
   padding-left: 20px;
-  color: #222222;
+  color: var(--color-white);
   margin: 12px 0;
 }
 
@@ -345,13 +350,13 @@ table.data-table tbody tr:hover {
 }
 
 .references-section a {
-  color: #0000ee;
+  color: var(--color-yellow);
   text-decoration: underline;
 }
 
 .references-section a:hover,
 .references-section a:focus {
-  color: #0000ee;
+  color: var(--color-yellow);
   text-decoration: underline;
 }
 
@@ -368,12 +373,10 @@ aside.sidebar {
 }
 
 aside.sidebar section {
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   padding: 0;
   margin-bottom: 24px;
-  box-shadow: none;
-  border-radius: 0;
 }
 
 aside.sidebar section:last-child {
@@ -383,7 +386,7 @@ aside.sidebar section:last-child {
 aside.sidebar section h3 {
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
+  color: var(--color-yellow);
   margin: 0 0 12px 0;
   padding: 0;
   border: none;
@@ -403,25 +406,25 @@ aside.sidebar section li {
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
-  color: #222222;
+  color: var(--color-white);
   border: none;
   padding: 0;
 }
 
 aside.sidebar section li strong {
-  color: #000000;
+  color: var(--color-white);
   font-weight: bold;
   flex-shrink: 0;
 }
 
 aside.sidebar section li span {
-  color: #222222;
+  color: var(--color-white);
   text-align: right;
 }
 
 aside.sidebar section iframe {
   width: 100%;
-  border: 1px solid #dddddd;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: block;
 }
 
@@ -434,11 +437,9 @@ aside.gallery {
 
 aside.gallery figure {
   margin: 0;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   padding: 0;
-  box-shadow: none;
-  border-radius: 0;
 }
 
 aside.gallery img {
@@ -446,12 +447,11 @@ aside.gallery img {
   height: auto;
   display: block;
   border: none;
-  border-radius: 0;
 }
 
 aside.gallery figcaption {
   font-size: 13.5px;
-  color: #222222;
+  color: var(--color-white);
   margin-top: 6px;
   font-style: normal;
 }
@@ -459,21 +459,22 @@ aside.gallery figcaption {
 footer {
   text-align: center;
   padding: 30px 20px;
-  background-color: #ffffff;
-  color: #222222;
+  background-color: var(--color-bg);
+  color: var(--color-white);
   font-size: 14px;
   margin-top: 40px;
   border: none;
 }
 
 footer a {
-  color: #000000;
+  color: var(--color-white);
   text-decoration: underline;
+  font-weight: normal;
 }
 
 footer a:hover,
 footer a:focus {
-  color: #000000;
+  color: var(--color-white);
   text-decoration: underline;
 }
 
@@ -507,6 +508,7 @@ footer a:focus {
 
   header img {
     width: 45px;
+    height: auto;
   }
 
   header .site-title {
