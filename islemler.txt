@@ -1,0 +1,71 @@
+# İSVEÇ MAKALE SİTESİ – EDİTORYAL TASARIM VE KULLANICI DENEYİMİ RAPORU
+
+Bu belge, sitenin GEO optimizasyonları korunarak gerçekleştirilen özgün editoryal tasarım, UI/UX ve responsive altyapı çalışmalarını açıklamaktadır.
+
+---
+
+## 1. Önceki Tasarımın Sorunları
+- Standart Wikipedia tarzı monolitik tablo ve kutu düzeni, çağdaş editoryal yayımcılık estetiğinden uzaktı.
+- Sağ sütundaki görseller ve ülke bilgi paneli iki ayrı serbest blok halinde dağınık durmaktaydı.
+- Tipografik hiyerarşi temel tarayıcı serif/sans fontlarıyla sınırlıydı; uzun süreli makale okuma konforu düşüktü.
+- Header alanı yalnızca küçük bir bayrak ve başlıktan ibaretti; sayfa içi bölümlere yönelik gezinme sunmuyordu.
+
+## 2. Yeni Tasarım Konsepti
+- **Felsefe:** İskandinav minimalizmi (Nordic Functionalism) ve İsviçre grafik tasarım geleneği (Swiss Style / Neue Grafik).
+- **Kimlik:** Saygın bir dijital ansiklopedi, akademik araştırma monografisi ve nitelikli bir editoryal dergi sentezi.
+- **Odak:** Yapay zekâ şablonlarından (gradientler, glassmorphism, aşırı yuvarlak kartlar, animasyonlu butonlar) arındırılmış; tipografi, 3 sütunlu editoryal ızgara, okunabilir satır boyu ve dengeli negatif alan öncelikli bir arayüz.
+
+## 3. Kullanılan Renk Paleti
+- **Koyu Lacivert (#17354A & #0F2230):** Header, başlıklar ve tablo üst bantlarında kurumsal ağırlık.
+- **İsveç Mavisi (#006AA7 & #004D7A):** Bağlantılar, içindekiler vurguları ve SSS sol sınır çizgileri.
+- **İsveç Sarısı (#FECC02):** Header üst çizgisi ve tablo başlık alt çizgisinde zarif editoryal vurgu.
+- **Kırık Beyaz / Sıcak Kâğıt Zemini (#F8F7F4 & #FCFCFB):** Gözü yormayan, mat editoryal okuma zemini.
+- **Ana Metin (#252525):** Yüksek kontrastlı (WCAG AA üstü) ve yumuşak koyu gövde metni.
+- **Ayrım Çizgileri (#E2E4E8 & #EEF0F2):** Sayfa içi hiyerarşiyi belirleyen keskin saç çizgisi (hairline) kenarlıklar.
+
+## 4. Kullanılan Yazı Tipleri
+- **Başlıklar:** "Lora" (Google Fonts / OFL Lisanslı) serif yazı tipi. Akademik yayıncılık karakteri, estetik harf oranları ve tam Türkçe karakter (ç, ğ, ı, ö, ş, ü, İ) desteği.
+- **Gövde Metinleri & Arayüz:** "Plus Jakarta Sans" (OFL Lisanslı) geometrik hümanist sans-serif yazı tipi. Yüksek harf açıklığı, modern İskandinav okunurluğu.
+- **Sistem Yedekleri:** Charter, Bitstream Charter, Sitka Text, Georgia, -apple-system, Segoe UI, Roboto.
+
+## 5. Değiştirilen ve Eklenen CSS Mimarisi
+- `:root` seviyesinde merkezi CSS değişkenleri (renkler, fontlar, ızgara genişlikleri ve yarıçaplar) tanımlandı.
+- Masaüstünde 3 sütunlu dengeli editoryal düzen kuruldu:
+  - Sol Sütun (240px): `position: sticky` özellikli İçindekiler menüsü.
+  - Orta Sütun (820px maksimum): Tipografik konforu optimize edilmiş ana makale gövdesi (1.74 line-height, 1.02rem font boyutu).
+  - Sağ Sütun (330px): Ülke bilgi tablosu, interaktif harita ve fotoğraf galerisini birleştiren editoryal sütun.
+- Tablolar için lacivert başlık bantlı, sarı aksanlı, zebra satırlı ve yatay taşma korumalı (`.table-container`) Swiss-style düzen geliştirildi.
+- SSS bölümü kart yığını yerine sol kenarı mavi vurgulu editoryal soru-cevap bloklarına dönüştürüldü.
+- Kaynakça bölümü APA/Chicago akademik atıf biçimine uygun hâle getirildi; `:target` seçicisi ile metin içi [x] tıklamalarında ilgili kaynağın vurgulanması sağlandı.
+
+## 6. Yapılan HTML Düzenlemeleri
+- `<head>` alanına `Lora` ve `Plus Jakarta Sans` fontları için `preconnect` ve font yükleme etiketleri eklendi.
+- `<header>` içerisine site adı, editoryal alt başlık ve sayfa içi ana bölümlere (`#bolum1`, `#bolum2`, `#bolum3`, `#bolum4`, `#bolum5`, `#bolum-sss`, `#bolum-kaynakca`) giden zarif bir gezinme menüsü (`<nav class="header-nav">`) yerleştirildi.
+- `<aside class="sidebar">` ve `<aside class="gallery">` blokları, makalenin sağında tek bir mantıksal sütun oluşturan `<div class="sidebar-column">` kapsayıcısı altına toplandı.
+- Mevcut hiçbir metin, istatistik, görsel, ALT metni, ID ve semantik etiket değiştirilmedi.
+
+## 7. Mobil Uyumluluk ve Responsive Kademeleri
+- **1440px - 1920px (Geniş Ekran):** 3 sütunlu ferah editoryal düzen (TOC + Makale + Sağ Bilgi Sütunu).
+- **1160px - 1380px (Dizüstü Ekranı):** Sütun genişlikleri orantılı daraltıldı.
+- **768px - 1160px (Tablet):** İçindekiler menüsü üst alana ızgara olarak açıldı; makale ve sağ bilgi sütunu akıcı iki blok hâline getirildi.
+- **360px - 480px (Mobil Telefon):** Tüm içerik tek sütunlu kesintisiz okuma akışına girdi. Tablolar için dokunmatik yatay kaydırma korundu, yazı boyutları ve dokunma hedefleri mobil standartlara uyarlandı.
+
+## 8. Açık Kaynak Referanslar
+- **Google Fonts (OFL):** Lora (Cyreal Type Foundry) & Plus Jakarta Sans (Gumpita Rahayu / Tokotype).
+- **Modern CSS Reset Prensipleri:** Andy Bell ve Josh Comeau CSS taban kuralları.
+
+## 9. Gerçekleştirilen ve Gerçekleştirilemeyen Testler
+- **Başarıyla Gerçekleştirilen Testler:**
+  - JSON-LD ve Schema.org doğrulama testi (WebSite, Country, Article, FAQPage tam uyumlu, 0 hata).
+  - Sayfa içi 10 ana bölüm ve 15 kaynak bağlantısı doğrulama testi (tüm `#` hedefleri eksiksiz mevcut).
+  - 16 görünür SSS öğesinin FAQPage şemasıyla birebir veri ve anlam tutarlılığı doğrulaması.
+  - Yorum satırı denetimi (HTML ve CSS içerisinde hiçbir yorum satırı olmadığı teyit edildi).
+  - CSS parantez dengesi (107 / 107) ve 4 kademeli media query testi.
+- **Gerçekleştirilemeyen Testler:**
+  - Chrome DevTools aktif portu (9222) ortamda açık olmadığı için tarayıcı alt ajanı üzerinden otomatik ekran görüntüsü yakalanamamıştır (tüm stil ve yapısal testler Node.js DOM ve CSS analiz araçlarıyla doğrulanmıştır).
+
+## 10. Korunan GEO ve Semantik Özellikler
+- Tek `<h1>` hiyerarşisi (`article > h1`) ve semantik bölümleme korundu.
+- Article, Country, WebSite ve FAQPage JSON-LD yapılandırılmış verileri aynen muhafaza edildi.
+- 15 adet alt sayfa doğrulamalı kaynak bağlantısı ve tüm istatistiki ölçüm yılları korundu.
+- `robots.txt`, `llms.txt` ve `sitemap.xml` dosyalarıyla tam entegrasyon sürdürüldü.

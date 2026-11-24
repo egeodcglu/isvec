@@ -10,6 +10,9 @@
     content="İsveç'in coğrafi sınırları, Viking Çağı'ndan NATO üyeliğine tarihi, Kron para birimi ve ekonomik yapısı, iklimi, mutfağı, dini yapısı ve ulaşım olanakları hakkında doğrulanmış rehber.">
   <link rel="canonical" href="https://egeodcglu.github.io/isvec/">
   <link rel="alternate" type="text/plain" href="https://egeodcglu.github.io/isvec/llms.txt" title="LLM Context">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
@@ -220,8 +223,24 @@
 <body>
 
   <header>
-    <img src="img/isvec-kapak.png" alt="İsveç Krallığı Resmi Bayrağı (Sveriges flagga)" width="60" height="37">
-    <span class="site-title">İsveç (Sweden)</span>
+    <div class="header-inner">
+      <div class="header-brand">
+        <img src="img/isvec-kapak.png" alt="İsveç Krallığı Resmi Bayrağı (Sveriges flagga)" width="48" height="30">
+        <div class="header-titles">
+          <span class="site-title">İsveç (Sweden)</span>
+          <span class="site-tagline">Editoryal Ülke Rehberi ve Ansiklopedi Kaynağı</span>
+        </div>
+      </div>
+      <nav class="header-nav" aria-label="Hızlı Bölüm Gezintisi">
+        <a href="#bolum1">Coğrafya</a>
+        <a href="#bolum2">Tarih</a>
+        <a href="#bolum3">Ekonomi</a>
+        <a href="#bolum4">İklim</a>
+        <a href="#bolum5">Mutfak</a>
+        <a href="#bolum-sss">SSS</a>
+        <a href="#bolum-kaynakca">Kaynakça</a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -240,25 +259,6 @@
         <li><a href="#bolum-sss">8. Sıkça Sorulan Sorular (SSS)</a></li>
         <li><a href="#bolum-kaynakca">9. Kaynakça</a></li>
       </ul>
-    </aside>
-
-    <aside class="gallery" aria-label="İsveç Görsel Galerisi">
-      <figure>
-        <img src="img/nl1.jpg"
-          alt="İsveç Laponyası'nda kış gecesi gökyüzünde beliren yeşil Kuzey Işıkları (Aurora Borealis)" loading="lazy">
-        <figcaption>İsveç, Northern Lights (Kuzey Işıkları)</figcaption>
-      </figure>
-      <figure>
-        <img src="img/vasa.jpg"
-          alt="Stockholm Vasa Müzesi'nde korunan ve sergilenen 17. yüzyıl tarihi Vasa Kraliyet Savaş Gemisi"
-          loading="lazy">
-        <figcaption>İsveç (Stockholm), Vasa Müzesi</figcaption>
-      </figure>
-      <figure>
-        <img src="img/midnightsun.jpg"
-          alt="İsveç'in kuzey kutup dairesinde yaz gündönümünde güneşin gece yarısı batmadığı an" loading="lazy">
-        <figcaption>İsveç, Midnight Sun (Gece Yarısı Güneşi)</figcaption>
-      </figure>
     </aside>
 
     <article itemscope itemtype="https://schema.org/Article" itemprop="articleBody">
@@ -932,36 +932,57 @@
 
     </article>
 
-    <aside class="sidebar" aria-label="İsveç Temel Bilgiler ve Harita">
-      <section itemscope itemtype="https://schema.org/Country">
-        <h3 itemprop="name">İsveç Hakkında</h3>
-        <ul>
-          <li><strong>Resmî Adı:</strong> <span itemprop="alternateName">İsveç Krallığı (Konungariket Sverige)</span>
-          </li>
-          <li><strong>Başkent:</strong> <span itemprop="capital">Stockholm</span></li>
-          <li><strong>Nüfus:</strong> <span>10.587.710 (SCB, 31 Aralık 2024)</span></li>
-          <li><strong>Yüzölçümü:</strong> <span>450.295 km² (Kara: 410.335 km², Su: 39.960 km²)</span></li>
-          <li><strong>Resmî Dil:</strong> <span>İsveççe (Svenska)</span></li>
-          <li><strong>Para Birimi:</strong> <span itemprop="currency">İsveç Kronu (SEK)</span></li>
-          <li><strong>Yönetim:</strong> <span>Anayasal Monarşi, Parlamenter Demokrasi</span></li>
-          <li><strong>Devlet Başkanı:</strong> <span>Kral XVI. Carl Gustaf</span></li>
-          <li><strong>Başbakan:</strong> <span>Ulf Kristersson</span></li>
-          <li><strong>Ülke Kodları:</strong> <span>ISO 3166-1 (SE / SWE)</span></li>
-          <li><strong>Telefon Kodu:</strong> <span>+46</span></li>
-          <li><strong>İnternet Alan Adı:</strong> <span>.se</span></li>
-          <li><strong>AB Üyeliği:</strong> <span>1 Ocak 1995</span></li>
-          <li><strong>NATO Üyeliği:</strong> <span>7 Mart 2024 (32. Müttefik)</span></li>
-          <li><strong>Saat Dilimi:</strong> <span>UTC+1 (CET), Yazın UTC+2 (CEST)</span></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Harita</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7246332.585206855!2d11.141228292044726!3d63.678363006310576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb2396d35f0f1%3A0x22b8eba28dad6f62!2zxLBzdmXDpw!5e0!3m2!1str!2str!4v1767024760013!5m2!1str!2str"
-          width="300" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="İsveç Konum Haritası - Google Maps"></iframe>
-      </section>
-    </aside>
+    <div class="sidebar-column">
+      <aside class="sidebar" aria-label="İsveç Temel Bilgiler ve Harita">
+        <section itemscope itemtype="https://schema.org/Country">
+          <h3 itemprop="name">İsveç Krallığı</h3>
+          <ul>
+            <li><strong>Resmî Adı:</strong> <span itemprop="alternateName">İsveç Krallığı (Konungariket Sverige)</span>
+            </li>
+            <li><strong>Başkent:</strong> <span itemprop="capital">Stockholm</span></li>
+            <li><strong>Nüfus:</strong> <span>10.587.710 (SCB, 31 Aralık 2024)</span></li>
+            <li><strong>Yüzölçümü:</strong> <span>450.295 km² (Kara: 410.335 km², Su: 39.960 km²)</span></li>
+            <li><strong>Resmî Dil:</strong> <span>İsveççe (Svenska)</span></li>
+            <li><strong>Para Birimi:</strong> <span itemprop="currency">İsveç Kronu (SEK)</span></li>
+            <li><strong>Yönetim:</strong> <span>Anayasal Monarşi, Parlamenter Demokrasi</span></li>
+            <li><strong>Devlet Başkanı:</strong> <span>Kral XVI. Carl Gustaf</span></li>
+            <li><strong>Başbakan:</strong> <span>Ulf Kristersson</span></li>
+            <li><strong>Ülke Kodları:</strong> <span>ISO 3166-1 (SE / SWE)</span></li>
+            <li><strong>Telefon Kodu:</strong> <span>+46</span></li>
+            <li><strong>İnternet Alan Adı:</strong> <span>.se</span></li>
+            <li><strong>AB Üyeliği:</strong> <span>1 Ocak 1995</span></li>
+            <li><strong>NATO Üyeliği:</strong> <span>7 Mart 2024 (32. Müttefik)</span></li>
+            <li><strong>Saat Dilimi:</strong> <span>UTC+1 (CET), Yazın UTC+2 (CEST)</span></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Harita</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7246332.585206855!2d11.141228292044726!3d63.678363006310576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb2396d35f0f1%3A0x22b8eba28dad6f62!2zxLBzdmXDpw!5e0!3m2!1str!2str!4v1767024760013!5m2!1str!2str"
+            width="300" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="İsveç Konum Haritası - Google Maps"></iframe>
+        </section>
+      </aside>
+
+      <aside class="gallery" aria-label="İsveç Görsel Galerisi">
+        <figure>
+          <img src="img/nl1.jpg"
+            alt="İsveç Laponyası'nda kış gecesi gökyüzünde beliren yeşil Kuzey Işıkları (Aurora Borealis)" loading="lazy">
+          <figcaption>İsveç, Northern Lights (Kuzey Işıkları)</figcaption>
+        </figure>
+        <figure>
+          <img src="img/vasa.jpg"
+            alt="Stockholm Vasa Müzesi'nde korunan ve sergilenen 17. yüzyıl tarihi Vasa Kraliyet Savaş Gemisi"
+            loading="lazy">
+          <figcaption>İsveç (Stockholm), Vasa Müzesi</figcaption>
+        </figure>
+        <figure>
+          <img src="img/midnightsun.jpg"
+            alt="İsveç'in kuzey kutup dairesinde yaz gündönümünde güneşin gece yarısı batmadığı an" loading="lazy">
+          <figcaption>İsveç, Midnight Sun (Gece Yarısı Güneşi)</figcaption>
+        </figure>
+      </aside>
+    </div>
 
   </main>
 
