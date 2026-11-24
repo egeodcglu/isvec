@@ -373,9 +373,9 @@ aside.sidebar {
 }
 
 aside.sidebar section {
-  background-color: transparent;
+  background-color: var(--color-toc-bg);
   border: none;
-  padding: 0;
+  padding: 18px 16px;
   margin-bottom: 24px;
 }
 
@@ -437,9 +437,9 @@ aside.gallery {
 
 aside.gallery figure {
   margin: 0;
-  background-color: transparent;
+  background-color: var(--color-toc-bg);
   border: none;
-  padding: 0;
+  padding: 14px;
 }
 
 aside.gallery img {
@@ -452,8 +452,9 @@ aside.gallery img {
 aside.gallery figcaption {
   font-size: 13.5px;
   color: var(--color-white);
-  margin-top: 6px;
+  margin-top: 8px;
   font-style: normal;
+  text-align: center;
 }
 
 footer {
